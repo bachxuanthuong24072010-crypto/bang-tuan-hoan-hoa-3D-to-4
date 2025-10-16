@@ -222,9 +222,9 @@ function focusElement(targetObject, item){
             focusZ 
         );
         
-        // Buộc nhãn luôn hướng về Camera
-        detailObject.lookAt(camera.position); 
-        
+        // 💡 ĐÃ SỬA: BỎ LỆNH lookAt(camera.position) để nhãn không bị xoay ngược khi camera xoay
+        // detailObject.lookAt(camera.position); // <--- Lệnh bị loại bỏ
+
         scene.add(detailObject);
         detailObjects.push(detailObject);
         
